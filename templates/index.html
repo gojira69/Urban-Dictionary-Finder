@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Dictionary</title>
     <link rel="stylesheet" href="../static/styles.css" />
-    <!-- Add a CSS file for styling -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Martian Mono"
+      rel="stylesheet"
+    />
+    <style>
+      .search-container {
+        text-align: center;
+      }
+      .search-container input {
+        font-family: "Martian Mono";
+        width: 500px;
+        border-radius: 7.5px;
+        border-width: 5px;
+        border-color: black;
+      }
+      .search-container button {
+        font-family: "Martian Mono";
+        width: 80px;
+        border-radius: 7.5px;
+        cursor: pointer;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>URBAN DICTIONARY</h1>
-    <div class="search-container">
-      <input type="text" id="termInput" placeholder="Enter a term" />
-      <button id="searchButton">Search</button>
-    </div>
-    <div id="result"></div>
-
+    <header>
+      <h1>URBAN DICTIONARY</h1>
+    </header>
+    <main>
+      <div class="search-container">
+        <input type="text" id="termInput" placeholder="&#128269; Enter a term" />
+        <button id="searchButton">Search</button>
+      </div>
+      <div id="result"></div>
+    </main>
     <script src="../static/script.js"></script>
-    <!-- Add a JavaScript file for client-side functionality -->
   </body>
 </html>

@@ -17,6 +17,6 @@ searchButton.addEventListener('click', () => {
             }
         })
         .catch((error) => {
-            resultDiv.innerHTML = `<p>An error occurred: ${error.message}</p>`;
+            resultDiv.innerHTML = `<p style="font-family: 'Martian Mono'; color:purple;">An error occurred: ${error.message}</p>`;
         });
 });
